@@ -1,7 +1,7 @@
 {
     "name": "jeradin/acf-dynamic-table-field",
     "description": "A Dynamic Fable field for Advanced Custom Fields",
-    "type": "wordpress-plugin",
+    "type": "acf-plugin",
     "keywords": ["wordpress", "plugin", "acf"],
     "homepage": "https://github.com/Jeradin/acf-dynamic-table-field",
     "license": "GPL-2.0"
