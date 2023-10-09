@@ -66,16 +66,19 @@ class acf_field_dynamic_table_field extends acf_field {
 
 		// register edittable
 		wp_register_script( 'acf-edittable', $this->settings['dir'] . 'js/jquery.edittable.js', array('acf-input'), $this->settings['version'] );
-		//wp_register_style( 'acf-edittablecss', $this->settings['dir'] . 'css/jquery.edittable.css', array('acf-input'), $this->settings['version'] );
 
 		// register ACF scripts
 		wp_register_script( 'acf-dynamic-table', $this->settings['dir'] . 'js/dynamic-table.js', array('acf-input'), $this->settings['version'] );
 		wp_register_style( 'acf-dynamic-tablecss', $this->settings['dir'] . 'css/dynamic-table.css', array('acf-input'), $this->settings['version'] );
 
+		// Link creater
+		wp_register_script( 'acf-dynamic-table-link-creator', $this->settings['dir'] . 'js/dynamic-table-link-creator.js', array('acf-input'));
+
 		// scripts
 		wp_enqueue_script(array(
 			'acf-edittable',
 			'acf-dynamic-table',
+			'acf-dynamic-table-link-creator'
 		));
 
 		// styles
