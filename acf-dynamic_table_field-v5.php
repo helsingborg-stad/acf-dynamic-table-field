@@ -283,6 +283,8 @@ class acf_field_dynamic_table_field extends acf_field {
 			return '';
 		}
 
+		$pattern = '/(?<!\[)"(?!\])/';
+		$value = preg_replace($pattern, '', $value);
 		$tabledata =  json_decode($value);
 
 		if (empty($tabledata) || !is_array($tabledata)) {
